@@ -99,3 +99,74 @@ Source-Age: 0
 [2023-07-31 16:26:17,422: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2023-07-31 17:46:17,746: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-31 17:46:17,775: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-31 17:46:17,780: INFO: common: created directory at path :artifacts]
+[2023-07-31 17:46:17,785: INFO: common: created directory at path :artifacts/prepare_base_model]
+[2023-07-31 17:46:30,898: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-31 19:38:52,322: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-31 19:38:52,328: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-31 19:38:52,336: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-31 19:38:52,344: INFO: common: created directory at path :artifacts]
+[2023-07-31 19:38:52,344: INFO: common: created directory at path :artifacts/data_ingestion]
+[2023-07-31 19:39:07,791: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded with following info 
+ Connection: close
+Content-Length: 11931933
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "6867923c6ae58f6d94c541aacdc291f35adc887130d6d2f3b91541c184390016"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3642:CF223:1A88D:21A4C:64C7C07F
+Accept-Ranges: bytes
+Date: Mon, 31 Jul 2023 14:09:05 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ccu830048-CCU
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1690812544.314487,VS0,VE1344
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9b95238da20eee1036bbfa83f5bfcfe61aaf3ff8
+Expires: Mon, 31 Jul 2023 14:14:05 GMT
+Source-Age: 1
+
+]
+[2023-07-31 19:39:08,947: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-31 19:39:08,947: INFO: main: *******************]
+[2023-07-31 19:39:08,947: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-07-31 19:39:08,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-31 19:39:08,955: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-31 19:39:08,963: INFO: common: created directory at path :artifacts]
+[2023-07-31 19:39:08,963: ERROR: main: 'configurationManager' object has no attribute 'get_prepare_base_model_config']
+Traceback (most recent call last):
+  File "C:\Users\Rohan Brahmakshatri\Documents\Python Scripts\EndtoEnd_Project\chicken_disease_classification_project\main.py", line 22, in <module>
+    obj.main()
+  File "c:\users\rohan brahmakshatri\documents\python scripts\endtoend_project\chicken_disease_classification_project\src\cnnClassifiers\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+AttributeError: 'configurationManager' object has no attribute 'get_prepare_base_model_config'
+[2023-07-31 19:47:33,275: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-07-31 19:47:33,278: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-31 19:47:33,286: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-31 19:47:33,294: INFO: common: created directory at path :artifacts]
+[2023-07-31 19:47:33,294: INFO: common: created directory at path :artifacts/data_ingestion]
+[2023-07-31 19:47:33,294: INFO: data_ingestion: file already exists of size ~11652 KB]
+[2023-07-31 19:47:34,308: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-07-31 19:47:34,309: INFO: main: *******************]
+[2023-07-31 19:47:34,309: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-07-31 19:47:34,309: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-07-31 19:47:34,317: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-07-31 19:47:34,317: INFO: common: created directory at path :artifacts]
+[2023-07-31 19:47:34,317: INFO: common: created directory at path :artifacts/prepare_base_model]
+[2023-07-31 19:47:35,649: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-07-31 19:47:36,328: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
