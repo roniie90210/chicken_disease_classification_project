@@ -1,7 +1,11 @@
 from cnnClassifiers.constants import *
 from cnnClassifiers.utils.common import read_yaml,create_dictionaries
 import os
-from cnnClassifiers.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,PrepareCallbacksConfig,TrainingConfig)
+from cnnClassifiers.entity.config_entity import (DataIngestionConfig,
+                                                 PrepareBaseModelConfig,
+                                                 PrepareCallbacksConfig,
+                                                 TrainingConfig,
+                                                 EvaluationConfig)
 
 
 class configurationManager:
@@ -76,7 +80,7 @@ class configurationManager:
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
         params = self.params
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Chicken-fecal-images")
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "data200")
         create_dictionaries([
             Path(training.root_dir)
         ])
@@ -95,4 +99,13 @@ class configurationManager:
         return training_config
     
     
-    
+        
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/data200",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
